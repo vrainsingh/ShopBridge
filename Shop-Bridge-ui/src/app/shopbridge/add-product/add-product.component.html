@@ -1,0 +1,41 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form [formGroup]="productDetails" (ngSubmit)="onSubmit()">
+                <fieldset>
+                    <legend class="text-center">Enter Product Informationation <span class="req"><small>
+                                required *</small></span></legend>
+
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> Name:  </label>
+                        <input required type="text" formControlName="name" name="name" id="name"
+                            class="form-control phone" maxlength="28" placeholder="Enter product name..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description"><span class="req">* </span> Description: </label>
+                        <input class="form-control" type="text" formControlName ="description" name="description" id="desc" required
+                            placeholder="Enter Product description" />
+                        <div id="errFirst"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price"><span class="req">* </span> Price : </label>
+                        <input class="form-control" type="text" formControlName="price" name="price" id="price"
+                            placeholder="Engter Product Price" required />
+                        <div id="errLast"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Save Product">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+
+

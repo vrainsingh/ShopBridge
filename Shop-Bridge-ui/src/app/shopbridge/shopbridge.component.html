@@ -1,0 +1,14 @@
+<div class="row">
+    <h1>ShopBridge</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-add-product #addProduct (savedProduct)="addNewProductToDisplay($event)"></app-add-product>
+    </div>
+    <div class="col-md-6">
+        <app-display-product #displayProduct (editProduct)="editProduct($event)"></app-display-product>
+    </div>
+</div>
+
+
